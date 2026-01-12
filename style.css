@@ -13,9 +13,27 @@ body{
   font-optical-sizing: auto;
 }
 header{
-    background-color: #FFF8F3;
-    padding-top: 50px ;
+  background-color: #FFF8F3;
+
+  background-image: 
+    url("./images/developer.png"),
+    url("./images/header_bg.png");
+
+  background-repeat: 
+    no-repeat,
+    no-repeat;
+
+  background-position: 
+    top left,
+    bottom right;
+
+  background-size: 
+    contain,   /* developer.png size */
+    800px auto;      /* header_bg.png size */
+
+  padding-top: 30px;
 }
+
 nav{
     width: 71%;
     max-width: 1084px;
@@ -51,7 +69,41 @@ nav .menu a{
     border-radius: 5px ;
     font-size: 20px;
     font-weight: bold;
+    cursor: pointer;
+}
 
 
+
+#banner .banner-content{
+    max-width: 585px;
+    margin: 47px 38px 0 230px;
+    
+}
+
+#banner
+{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#banner .banner-content h2{
+ font-size:45px;
+ font-weight: 600;
+ color:#474747;
+ margin-bottom: 5px;
+
+}
+#banner .banner-content h1{
+ font-size:65px;
+ font-weight: bold;
+ color:#181818;
+ margin-bottom: 20px;
+}
+#banner .banner-content p{
+ font-size: 18px;
+ color:#757575;
+ line-height:25px;
+ margin-bottom: 20px;
 
 }
